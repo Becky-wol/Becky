@@ -33,9 +33,9 @@
   );
   */
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+  $contact->add_message( $_GER['name'], 'From');
+  $contact->add_message( $_GET['email'], 'Email');
+  $contact->add_message( $_GET['message'], 'Message', 10);
 
   echo $contact->send();
 ?>
